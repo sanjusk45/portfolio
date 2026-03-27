@@ -1,2 +1,19 @@
-# portfolio
-My personal portfolio projects using Python, Full Stack, and AI
+# 👨‍💻 Sanjai Kumar A - Portfolio
+
+## 🚀 About Me
+Python Full Stack Developer | AI Enthusiast
+
+## 🛠 Skills
+- Python
+- Flask / FastAPI
+- MySQL
+- HTML, CSS, JavaScript
+- Basic AI (LLM APIs)
+
+## 📂 Projects
+- Trading Bot (Python OOP)
+- NIFTY Backtesting Strategy
+- Full Stack App
+
+## 📫 Contact
+Email: sachinsanjai545@gmail.com
