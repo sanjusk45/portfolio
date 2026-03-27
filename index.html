@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjaikumar A | Full-Stack & Python Developer</title>
+    <meta name="description" content="Entry-level Python and Full-Stack Developer with hands-on experience in Django, Node.js, and REST API development. Based in Chennai, India.">
+    <meta name="author" content="Sanjaikumar A">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="neo-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-overlay">
+        <div class="loader-shapes">
+            <div class="loader-shape-svg loader-shape-1">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#66d9ef" stroke="#000" stroke-width="4"/>
+                    <path d="M35 40 L20 50 L35 60" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M65 40 L80 50 L65 60" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="55" y1="35" x2="45" y2="65" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="loader-shape-svg loader-shape-2">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#ffd93d" stroke="#000" stroke-width="4"/>
+                    <path d="M25 35 L40 50 L25 65" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="50" y1="65" x2="75" y2="65" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="loader-shape-svg loader-shape-3">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#a8e6cf" stroke="#000" stroke-width="4"/>
+                    <rect x="20" y="20" width="60" height="60" rx="3" fill="#ffd93d" stroke="#000" stroke-width="4"/>
+                    <rect x="30" y="20" width="40" height="20" fill="#66d9ef" stroke="#000" stroke-width="3"/>
+                    <rect x="35" y="55" width="30" height="15" rx="2" fill="#000"/>
+                </svg>
+            </div>
+        </div>
+        <div class="loader-wrapper">
+            <div class="loader-letter">S</div>
+            <div class="loader-letter">K</div>
+        </div>
+        <div class="loader-progress-bar">
+            <div class="loader-progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
+        <div class="progress-checkpoints">
+            <div class="checkpoint" data-section="hero">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Home</span>
+            </div>
+            <div class="checkpoint" data-section="about">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">About</span>
+            </div>
+            <div class="checkpoint" data-section="experience">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Projects</span>
+            </div>
+            <div class="checkpoint" data-section="skills">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Skills</span>
+            </div>
+            <div class="checkpoint" data-section="contact">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Contact</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="nav-brand">SK</a>
+            <div class="nav-right">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-cta">Get in Touch!</a>
+                <a href="A___Sanjai_kumar_.pdf" download="Sanjaikumar_A_Resume.pdf" class="nav-resume-btn"><i class="fas fa-download"></i> Resume</a>
+                <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <p class="hero-greeting" id="hero-greeting">Hi there! 👋</p>
+                <h1 class="hero-name">I'm Sanjaikumar A.</h1>
+                <p class="hero-description">
+                    Based in Chennai, India, I'm an entry-level Python and Full-Stack Developer. I love building scalable backend systems, REST APIs, and real-world web applications using Django, Node.js, and React.
+                </p>
+                <div class="hero-social">
+                    <a href="https://github.com/sanjusk45" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sanjai-kumar-b484952b2/" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sachinsanjai545@gmail.com" class="social-btn">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero-cta-container">
+                    <div class="coffee-cta-wrapper">
+                        <div class="coffee-arrow">
+                            <span class="coffee-arrow-text">Hire me!</span>
+                            <img src="arrow.png" alt="arrow" class="coffee-arrow-img" width="140" height="140">
+                        </div>
+                        <a href="mailto:sachinsanjai545@gmail.com" target="_blank" class="btn-coffee">
+                            <img src="caffe-icon.gif" alt="Coffee" class="coffee-icon-img" width="52" height="52">
+                        </a>
+                    </div>
+                    <a href="#contact" class="btn-cta">Get in Touch!</a>
+                    <a href="A___Sanjai_kumar_.pdf" download="Sanjaikumar_A_Resume.pdf" class="btn-resume-download">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="tape-sticker"></div>
+                    <div class="deco-code">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="88" height="88" rx="8" fill="#66d9ef" stroke="#000" stroke-width="4"/>
+                            <path d="M35 40 L20 50 L35 60" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 40 L80 50 L65 60" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="55" y1="35" x2="45" y2="65" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="deco-floppy">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="88" height="88" rx="8" fill="#a8e6cf" stroke="#000" stroke-width="4"/>
+                            <rect x="20" y="20" width="60" height="60" rx="3" fill="#ffd93d" stroke="#000" stroke-width="4"/>
+                            <rect x="30" y="20" width="40" height="20" fill="#66d9ef" stroke="#000" stroke-width="3"/>
+                            <rect x="35" y="55" width="30" height="15" rx="2" fill="#000"/>
+                        </svg>
+                    </div>
+                    <div class="deco-terminal">
+                        <svg width="90" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="88" height="88" rx="8" fill="#ffd93d" stroke="#000" stroke-width="4"/>
+                            <rect x="12" y="12" width="76" height="52" rx="4" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+                            <text x="18" y="30" font-family="monospace" font-size="10" fill="#66d9ef">$ python</text>
+                            <text x="18" y="44" font-family="monospace" font-size="10" fill="#a8e6cf">&gt; hello</text>
+                            <rect x="12" y="72" width="76" height="16" rx="3" fill="#ff6b6b" stroke="#000" stroke-width="2"/>
+                            <line x1="20" y1="80" x2="35" y2="80" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <!-- Avatar placeholder with initials -->
+                    <img src="avatar.png" alt="Sanjaikumar A" class="hero-photo" width="400" height="400" fetchpriority="high">
+                    <div class="deco-label">Full-Stack Dev</div>
+                </div>
+            </div>
+        </div>
+        <div class="tech-badges">
+            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-badge"><i class="fas fa-server"></i> Django</span>
+            <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="tech-badge"><i class="fab fa-react"></i> React.js</span>
+            <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+        </div>
+    </section>
+
+    <div class="paper-tear paper-tear-top">
+        <svg width="100%" height="30" viewBox="0 0 1440 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,0 Z"
+            fill="#ffffff" stroke="none"/>
+            <path d="M0,30 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,30 Z"
+            fill="#d0d0d0" stroke="none"/>
+            <path d="M0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15"
+            fill="none" stroke="var(--border)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="page-gap"></div>
+
+    <div class="paper-tear paper-tear-bottom">
+        <svg width="100%" height="30" viewBox="0 0 1440 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,0 Z"
+            fill="#d0d0d0" stroke="none"/>
+            <path d="M0,30 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,30 Z"
+            fill="#ffffff" stroke="none"/>
+            <path d="M0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15"
+            fill="none" stroke="var(--border)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="tear-tape-sticker"></div>
+
+    <div class="container">
+
+        <section class="section" id="about">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="card">
+                <p class="text">
+                    I'm a <span class="highlight highlight-yellow">Mechanical Engineering graduate</span> from M.A.M. School of Engineering with a CGPA of <span class="highlight highlight-cyan">7.1</span>, who found a deep passion for software development and made the switch to tech.
+                </p>
+                <p class="text">
+                    I specialize in building <span class="highlight highlight-pink">scalable backend systems</span> with Django and Node.js, creating <span class="highlight highlight-green">RESTful APIs</span>, and implementing <span class="highlight highlight-cyan">secure JWT-based authentication</span>. I've built real-world projects ranging from stock market analysis tools to e-commerce platforms.
+                </p>
+                <p class="text">
+                    Passionate about <span class="highlight highlight-yellow">problem solving</span>, I bring hands-on experience in data analysis with Pandas & NumPy, interactive data visualizations, and <span class="highlight highlight-pink">OOP-driven clean code</span> architecture.
+                </p>
+            </div>
+        </section>
+
+        <section class="section journey-section" id="experience">
+            <h2 class="section-title">Education</h2>
+            <div class="journey-container">
+                <div class="journey-timeline">
+                    <h3 class="timeline-header">Education Timeline</h3>
+                    <div class="timeline-list">
+                        <div class="timeline-item-flat" id="proj-1" data-city="Trichy">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-flat">
+                                <h4 class="timeline-title">🎓 M.A.M School of Engineering</h4>
+                                <p class="timeline-date">Bachelor of engineering |Mechanical Engineering |2019-2023</p>
+                                <p class="timeline-description">
+                                       CGPA: 7.1.
+                                </p>
+                                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Trichy , Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item-flat" id="proj-2" data-city="Kadaladi">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-flat">
+                                <h4 class="timeline-title"> Government Higher Secondary School</h4>
+                                <p class="timeline-date"> Computer and Mathematics | HSC.</p>
+                                <p class="timeline-description">
+                                   Percentage : 51%
+                                </p>
+                                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kadaladi, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item-flat" id="proj-3" data-city="Kadaladi">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-flat">
+                                <h4 class="timeline-title">Government Higher Secondary School</h4>
+                                <p class="timeline-date">10th| SSLC</p>
+                                <p class="timeline-description">
+                                    Percentage : 79%
+                                </p>
+                                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kadaladi, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item-flat" id="proj-4" data-city="Chennai">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-flat">
+                                <h4 class="timeline-title">🎓 Python Django Developer Certificate</h4>
+                                <p class="timeline-date">Login360 IT Solutions · Sep 2025 – Jan 2026</p>
+                                <p class="timeline-description">
+                                    Intensive full-stack Python Django developer training. Hands-on with Django ORM, REST APIs, PostgreSQL, and deployment pipelines.
+                                </p>
+                                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Velachery, Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journey-timeline-back">
+                    <svg class="treasure-map-svg" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="600" fill="#f4e7d7"/>
+                        <g opacity="0.15" transform="translate(55,30) scale(1.1)">
+                            <polygon points="130,10 200,30 250,80 270,150 260,220 240,290 200,360 160,400 110,420 80,390 50,340 30,270 20,190 40,110 80,50" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                        </g>
+                        <g transform="translate(330, 70)">
+                            <circle cx="0" cy="0" r="32" fill="none" stroke="#8B4513" stroke-width="2"/>
+                            <circle cx="0" cy="0" r="27" fill="none" stroke="#8B4513" stroke-width="1"/>
+                            <polygon points="0,-27 5,-9 -5,-9" fill="#D2691E"/>
+                            <polygon points="0,27 5,9 -5,9" fill="#8B4513"/>
+                            <polygon points="27,0 9,5 9,-5" fill="#8B4513"/>
+                            <polygon points="-27,0 -9,5 -9,-5" fill="#8B4513"/>
+                            <text x="0" y="-37" text-anchor="middle" font-size="14" font-weight="bold" fill="#8B4513">N</text>
+                        </g>
+                        <path d="M 100,130 Q 140,200 120,280 T 160,380 Q 175,430 195,460" stroke="#D2691E" stroke-width="3" fill="none" stroke-dasharray="8,8" stroke-linecap="round"/>
+                        <circle cx="100" cy="130" r="9" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                        <text x="116" y="135" font-size="11" fill="#654321" font-weight="bold">Chennai</text>
+                        <circle cx="120" cy="280" r="9" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                        <text x="136" y="284" font-size="11" fill="#654321" font-weight="bold">Trichy</text>
+                        <circle cx="160" cy="380" r="9" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                        <text x="176" y="384" font-size="11" fill="#654321" font-weight="bold">Kadaladi</text>
+                        <g transform="translate(195, 460)">
+                            <circle cx="0" cy="0" r="22" fill="#FFD700" opacity="0.4"/>
+                            <line x1="-13" y1="-13" x2="13" y2="13" stroke="#DC143C" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="13" y1="-13" x2="-13" y2="13" stroke="#DC143C" stroke-width="4" stroke-linecap="round"/>
+                            <text x="25" y="5" font-size="10" fill="#654321" font-weight="bold">Home!</text>
+                        </g>
+                        <g opacity="0.4">
+                            <line x1="280" y1="300" x2="280" y2="240" stroke="#8B4513" stroke-width="3"/>
+                            <ellipse cx="270" cy="238" rx="18" ry="8" fill="#228B22" transform="rotate(-20,270,238)"/>
+                            <ellipse cx="290" cy="235" rx="18" ry="8" fill="#228B22" transform="rotate(20,290,235)"/>
+                            <ellipse cx="280" cy="230" rx="14" ry="6" fill="#228B22"/>
+                            <line x1="320" y1="420" x2="320" y2="370" stroke="#8B4513" stroke-width="3"/>
+                            <ellipse cx="310" cy="368" rx="16" ry="7" fill="#228B22" transform="rotate(-15,310,368)"/>
+                            <ellipse cx="330" cy="366" rx="16" ry="7" fill="#228B22" transform="rotate(15,330,366)"/>
+                            <ellipse cx="320" cy="362" rx="12" ry="5" fill="#228B22"/>
+                        </g>
+                        <g opacity="0.3">
+                            <path d="M 290,180 Q 300,175 310,180 T 330,180" stroke="#4682B4" stroke-width="2" fill="none"/>
+                            <path d="M 290,192 Q 300,187 310,192 T 330,192" stroke="#4682B4" stroke-width="2" fill="none"/>
+                            <path d="M 290,490 Q 300,485 310,490 T 330,490" stroke="#4682B4" stroke-width="2" fill="none"/>
+                            <path d="M 290,502 Q 300,497 310,502 T 330,502" stroke="#4682B4" stroke-width="2" fill="none"/>
+                        </g>
+                        <text x="200" y="555" text-anchor="middle" font-size="13" fill="#8B4513" font-style="italic" opacity="0.8">Tamil Nadu, India</text>
+                        <rect x="10" y="10" width="380" height="580" fill="none" stroke="#8B4513" stroke-width="3" stroke-dasharray="10,5"/>
+                    </svg>
+                </div>
+                <div class="journey-map-container">
+                    <div id="journey-map"></div>
+                    <svg class="map-overlay-lines" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#000" stroke-width="2" opacity="0.8"/>
+                            </pattern>
+                            <pattern id="scratches" width="200" height="200" patternUnits="userSpaceOnUse">
+                                <line x1="10" y1="20" x2="60" y2="25" stroke="#000" stroke-width="2" opacity="0.7"/>
+                                <line x1="100" y1="50" x2="180" y2="48" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="30" y1="120" x2="90" y2="115" stroke="#000" stroke-width="2" opacity="0.7"/>
+                                <line x1="140" y1="160" x2="195" y2="165" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)"/>
+                        <rect width="100%" height="100%" fill="url(#scratches)"/>
+                    </svg>
+                    <img src="pirat.png" alt="Pirate" class="map-pirate-overlay" width="200" height="200" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ PROJECTS SECTION ══════════════ -->
+        <section class="section" id="projects">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: Stock Market -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrap">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" rx="6" fill="#ffd93d" stroke="#000" stroke-width="2"/>
+                                <polyline points="6,26 12,16 18,20 24,10 30,14" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <circle cx="24" cy="10" r="2.5" fill="#000"/>
+                            </svg>
+                        </div>
+                        <div class="project-number">01</div>
+                    </div>
+                    <h3 class="project-title">Stock Market Strategy Backtesting</h3>
+                    <p class="project-desc">
+                        A Django-based web application for stock market analysis and strategy backtesting using historical data. Features Supertrend indicator and Heikin Ashi techniques for buy/sell signals with interactive Matplotlib visualizations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">NumPy</span>
+                        <span class="project-tag">yFinance</span>
+                        <span class="project-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-yellow"></span>Supertrend & Heikin Ashi signal generation</div>
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-cyan"></span>Real-time stock data via yFinance API</div>
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-green"></span>Modular, scalable Django architecture</div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Event Management -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrap">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" rx="6" fill="#66d9ef" stroke="#000" stroke-width="2"/>
+                                <rect x="8" y="10" width="20" height="18" rx="2" fill="none" stroke="#000" stroke-width="2"/>
+                                <line x1="8" y1="15" x2="28" y2="15" stroke="#000" stroke-width="2"/>
+                                <line x1="13" y1="7" x2="13" y2="13" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="23" y1="7" x2="23" y2="13" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+                                <rect x="12" y="19" width="5" height="4" rx="1" fill="#000"/>
+                            </svg>
+                        </div>
+                        <div class="project-number">02</div>
+                    </div>
+                    <h3 class="project-title">Event Management & Ticket Booking</h3>
+                    <p class="project-desc">
+                        A scalable event management and ticket booking platform with secure JWT-based authentication, role-based access for organizers and attendees, automated email notifications, and real-time booking flow.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">JWT Auth</span>
+                        <span class="project-tag">Nodemailer</span>
+                        <span class="project-tag">RBAC</span>
+                        <span class="project-tag">OOP</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-yellow"></span>JWT-based auth with role-based access</div>
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-cyan"></span>Automated email via Nodemailer</div>
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-green"></span>OOP-driven, maintainable codebase</div>
+                    </div>
+                </div>
+
+                <!-- Project 3: E-Commerce -->
+                <div class="project-card project-card-featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrap">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" rx="6" fill="#a8e6cf" stroke="#000" stroke-width="2"/>
+                                <path d="M6 8 L10 8 L13 22 L27 22 L30 12 L10 12" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <circle cx="15" cy="26" r="2" fill="#000"/>
+                                <circle cx="25" cy="26" r="2" fill="#000"/>
+                            </svg>
+                        </div>
+                        <div class="project-number">03</div>
+                    </div>
+                    <h3 class="project-title">E-Commerce Product Catalog Management</h3>
+                    <p class="project-desc">
+                        A scalable and modular e-commerce backend with multi-role user access (admin, vendor, customer), JWT session control, and RESTful APIs documented with Swagger for third-party integrations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">Express.js</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">Swagger</span>
+                        <span class="project-tag">JWT</span>
+                        <span class="project-tag">REST API</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-yellow"></span>Multi-role: admin, vendor, customer</div>
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-cyan"></span>Swagger API documentation</div>
+                        <div class="project-highlight-item"><span class="highlight-dot highlight-dot-green"></span>Third-party logistics & email integrations</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ══════════════ END PROJECTS SECTION ══════════════ -->
+
+        <section class="section" id="skills">
+            <h2 class="section-title">SKILLS</h2>
+
+            <div class="skills-grid-modern">
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <i class="fab fa-python skill-icon-large"></i>
+                        <h3 class="skill-box-title">Languages</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag"><i class="fab fa-js"></i> JavaScript</span>                        
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <i class="fas fa-server skill-icon-large"></i>
+                        <h3 class="skill-box-title">Backend</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fas fa-fire"></i> Django</span>
+                        <span class="tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tag"><i class="fas fa-server"></i> Express.js</span>
+                        <span class="tag"><i class="fas fa-lock"></i> JWT Auth</span>
+                        <span class="tag"><i class="fas fa-file-code"></i> REST APIs</span>
+                        <span class="tag"><i class="fas fa-book"></i> Swagger</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <i class="fab fa-react skill-icon-large"></i>
+                        <h3 class="skill-box-title">Frontend</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fab fa-react"></i> React.js</span>
+                        <span class="tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <i class="fas fa-database skill-icon-large"></i>
+                        <h3 class="skill-box-title">Databases</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fas fa-elephant"></i> PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <i class="fas fa-chart-line skill-icon-large"></i>
+                        <h3 class="skill-box-title">Data & Analysis</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fas fa-chart-bar"></i> Pandas</span>
+                        <span class="tag"><i class="fas fa-calculator"></i> NumPy</span>
+                        <span class="tag"><i class="fas fa-chart-area"></i> Matplotlib</span>
+                        <span class="tag"><i class="fas fa-chart-line"></i> yFinance</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <i class="fas fa-tools skill-icon-large"></i>
+                        <h3 class="skill-box-title">Tools</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tag"><i class="fas fa-code"></i> VSCode</span>
+                        <span class="tag"><i class="fas fa-terminal"></i> PyCharm</span>
+                        <span class="tag"><i class="fas fa-envelope"></i> Nodemailer</span>
+                    </div>
+                </div>
+
+                <div class="skill-box highlight-box">
+                    <div class="skill-box-header">
+                        <i class="fas fa-sitemap skill-icon-large"></i>
+                        <h3 class="skill-box-title">Architecture</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fas fa-cubes"></i> REST API</span>
+                        <span class="tag"><i class="fas fa-lock"></i> JWT Auth</span>
+                        <span class="tag"><i class="fas fa-users-cog"></i> RBAC</span>
+                        <span class="tag"><i class="fas fa-layer-group"></i> MVC / OOP</span>
+                    </div>
+                </div>
+
+                <div class="skill-box highlight-box">
+                    <div class="skill-box-header">
+                        <i class="fas fa-users-cog skill-icon-large"></i>
+                        <h3 class="skill-box-title">Soft Skills</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                        <span class="tag"><i class="fas fa-sync-alt"></i> Adaptable</span>
+                        <span class="tag"><i class="fas fa-book-open"></i> Self-Learner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section" id="contact">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-container-compact">
+                <p class="contact-intro">Let's build something amazing together</p>
+                <div class="contact-grid">
+                    <a href="https://www.linkedin.com/in/sanjai-kumar-b484952b2/" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/sanjusk45" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:sachinsanjai545@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="tel:+919791928406" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 97919 28406</span>
+                    </a>
+                    <a href="A___Sanjai_kumar_.pdf" download="Sanjaikumar_A_Resume.pdf" class="contact-card contact-card-resume">
+                        <i class="fas fa-file-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-compact">
+                <div class="footer-main">
+                    <div class="footer-brand-compact">
+                        <strong>SANJAIKUMAR A</strong>
+                        <span>Full-Stack & Python Developer</span>
+                    </div>
+                    <div class="footer-nav-compact">
+                        <a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#experience">Projects</a>
+                        <a href="#skills">Skills</a>
+                    </div>
+                    <div class="footer-social-compact">
+                        <a href="https://github.com/sanjusk45" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sanjai-kumar-b484952b2/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sachinsanjai545@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom-compact">
+                    <span>© 2026 Sanjaikumar A</span>
+                    <a href="terminal.html" class="footer-terminal-link-compact">
+                        <i class="fas fa-terminal"></i> Terminal
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+    <script>
+        // Initialise AOS (project card fade-up animations)
+        AOS.init({ duration: 600, once: true, offset: 80 });
+
+        // Nav active link on scroll
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+            lastScroll = currentScroll;
+        });
+
+        // Always start at top of page on reload
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-overlay');
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                // Fix map not rendering properly after loader hides
+                setTimeout(() => {
+                    if (typeof map !== 'undefined') {
+                        map.invalidateSize();
+                    }
+                }, 400);
+            }, 1200);
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+        updateIcon(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        // Matrix Typing Effect for Hero Greeting
+        const greetingElement = document.getElementById('hero-greeting');
+        const finalText = 'Hi there! 👋';
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+
+        function matrixTypingEffect() {
+            let iterations = 0;
+            const interval = setInterval(() => {
+                greetingElement.textContent = finalText
+                    .split('')
+                    .map((char, index) => {
+                        if (index < iterations) {
+                            return finalText[index];
+                        }
+                        if (char === ' ' || char === '👋') {
+                            return char;
+                        }
+                        return chars[Math.floor(Math.random() * chars.length)];
+                    })
+                    .join('');
+
+                if (iterations >= finalText.length) {
+                    clearInterval(interval);
+                }
+                iterations += 1 / 3;
+            }, 50);
+        }
+
+        setTimeout(matrixTypingEffect, 800);
+
+        // Hero Photo Tilt on Scroll + Hover
+        let photoTilted = false;
+        const heroPhoto = document.querySelector('.hero-photo');
+        if (heroPhoto) {
+            window.addEventListener('scroll', () => {
+                if (!photoTilted && window.scrollY > 5) {
+                    heroPhoto.classList.add('tilted');
+                    photoTilted = true;
+                }
+            });
+            heroPhoto.addEventListener('mouseenter', () => {
+                heroPhoto.classList.remove('tilted');
+            });
+            heroPhoto.addEventListener('mouseleave', () => {
+                if (photoTilted) {
+                    heroPhoto.classList.add('tilted');
+                }
+            });
+        }
+
+        // Falling SVG decoration on scroll
+        let terminalFallen = false;
+        const decoTerminal = document.querySelector('.deco-terminal');
+        const heroContent = document.querySelector('.hero-content');
+
+        function calculateFallDistance() {
+            if (!decoTerminal || !heroContent) return;
+            const heroContentRect = heroContent.getBoundingClientRect();
+            const heroContentBottom = heroContentRect.bottom;
+            const terminalRect = decoTerminal.getBoundingClientRect();
+            const terminalFall = Math.max(0, heroContentBottom - terminalRect.bottom - 50);
+            decoTerminal.style.setProperty('--fall-distance', `${terminalFall}px`);
+        }
+
+        calculateFallDistance();
+        window.addEventListener('resize', calculateFallDistance);
+
+        window.addEventListener('scroll', () => {
+            if (!terminalFallen && window.scrollY > 5) {
+                if (decoTerminal) {
+                    decoTerminal.classList.add('falling');
+                    terminalFallen = true;
+                }
+            }
+        });
+
+        // Paper Tear Gap Parallax Effect
+        const pageGap = document.querySelector('.page-gap');
+        const paperTearBottom = document.querySelector('.paper-tear-bottom');
+        const paperTearBottomBgGray = document.querySelector('.paper-tear-bottom svg path[fill="#d0d0d0"]');
+        const paperTearBottomBgWhite = document.querySelector('.paper-tear-bottom svg path[fill="#ffffff"]');
+        const tearTapeSticker = document.querySelector('.tear-tape-sticker');
+        const minGapHeight = -30;
+
+        function updateTapePosition() {
+            if (paperTearBottom && tearTapeSticker) {
+                const rect = paperTearBottom.getBoundingClientRect();
+                tearTapeSticker.style.setProperty('--tape-position', `${rect.top}px`);
+            }
+        }
+
+        function updateGapParallax() {
+            if (!pageGap || !paperTearBottom) return;
+            if (window.innerWidth <= 768) return;
+
+            const scrollY = window.scrollY;
+            const initialGapHeight = 300;
+            const scrollStart = 100;
+            const scrollRange = 200;
+            const stickerDelay = 30;
+            const stickerStart = scrollStart + scrollRange + stickerDelay;
+            const stickerRange = 60;
+
+            updateTapePosition();
+
+            if (scrollY <= scrollStart) {
+                pageGap.style.setProperty('height', initialGapHeight + 'px', 'important');
+                paperTearBottom.style.setProperty('margin-top', '0px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '1';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'rotate(-8deg) translateY(-40px) translateZ(30px) rotateX(35deg)';
+                    tearTapeSticker.style.opacity = '0';
+                }
+            } else if (scrollY >= scrollStart && scrollY <= scrollStart + scrollRange) {
+                const progress = (scrollY - scrollStart) / scrollRange;
+                const currentHeight = initialGapHeight - (initialGapHeight - minGapHeight) * progress;
+
+                if (currentHeight >= 0) {
+                    pageGap.style.setProperty('height', currentHeight + 'px', 'important');
+                    paperTearBottom.style.setProperty('margin-top', '0px', 'important');
+                    if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '1';
+                    if (tearTapeSticker) {
+                        tearTapeSticker.style.transform = 'rotate(-8deg) translateY(-100px) translateZ(50px) rotateX(45deg)';
+                        tearTapeSticker.style.opacity = '0';
+                    }
+                } else {
+                    pageGap.style.setProperty('height', '0px', 'important');
+                    paperTearBottom.style.setProperty('margin-top', currentHeight + 'px', 'important');
+                    const negativePart = Math.abs(minGapHeight);
+                    const negativeProgress = Math.abs(currentHeight) / negativePart;
+                    const opacity = 1 - negativeProgress;
+                    if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = opacity;
+                    if (tearTapeSticker) {
+                        tearTapeSticker.style.transform = 'rotate(-8deg) translateY(-100px) translateZ(50px) rotateX(45deg)';
+                        tearTapeSticker.style.opacity = '0';
+                    }
+                }
+            } else if (scrollY > stickerStart && scrollY < stickerStart + stickerRange) {
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    const stickerProgress = (scrollY - stickerStart) / stickerRange;
+                    const translateY = -40 + (40 * stickerProgress);
+                    const translateZ = 30 - (30 * stickerProgress);
+                    const rotateX = 35 - (35 * stickerProgress);
+                    const opacityVal = Math.min(1, Math.max(0, (stickerProgress - 0.35) * 1.54));
+                    tearTapeSticker.style.transform = `rotate(-8deg) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg)`;
+                    tearTapeSticker.style.opacity = opacityVal;
+                }
+            } else if (scrollY >= stickerStart + stickerRange) {
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'rotate(-8deg) translateY(0px) translateZ(0px) rotateX(0deg)';
+                    tearTapeSticker.style.opacity = '1';
+                }
+            } else {
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'rotate(-8deg) translateY(-40px) translateZ(30px) rotateX(35deg)';
+                    tearTapeSticker.style.opacity = '0';
+                }
+            }
+        }
+
+        window.addEventListener('scroll', updateGapParallax);
+        window.addEventListener('resize', updateGapParallax);
+        requestAnimationFrame(() => { updateGapParallax(); });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .timeline-item-flat, .skill-box').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar hide on scroll down
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                navbar.classList.add('navbar-hidden');
+            } else {
+                navbar.classList.remove('navbar-hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Progress Bar
+        const progressBarFill = document.querySelector('.progress-bar-fill');
+        const checkpoints = document.querySelectorAll('.checkpoint');
+
+        function updateProgressBar() {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / documentHeight) * 100;
+            progressBarFill.style.width = progress + '%';
+
+            const sections = ['hero', 'about', 'experience', 'skills', 'contact'];
+            let activeIndex = 0;
+
+            sections.forEach((sectionId, index) => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+                        activeIndex = index;
+                    }
+                }
+            });
+
+            checkpoints.forEach((checkpoint, index) => {
+                if (index <= activeIndex) {
+                    checkpoint.classList.add('active');
+                } else {
+                    checkpoint.classList.remove('active');
+                }
+            });
+        }
+
+        checkpoints.forEach(checkpoint => {
+            checkpoint.addEventListener('click', () => {
+                const sectionId = checkpoint.getAttribute('data-section');
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', updateProgressBar);
+        window.addEventListener('resize', updateProgressBar);
+        updateProgressBar();
+
+        // ── Journey Timeline Book Page Flip Animation ──
+        const journeyTimeline = document.querySelector('.journey-timeline');
+        const journeyTimelineBack = document.querySelector('.journey-timeline-back');
+        const journeyTimelineData = {
+            hasStarted: false,
+            startScroll: 0,
+            pageRange: 200
+        };
+
+        function updateJourneyTimeline() {
+            if (!journeyTimeline || !journeyTimelineBack) return;
+            if (window.innerWidth < 769) return;
+
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const rect = journeyTimeline.getBoundingClientRect();
+            const elementTop = rect.top + scrollY;
+            const triggerPoint = scrollY + windowHeight * 0.5;
+
+            if (!journeyTimelineData.hasStarted && triggerPoint >= elementTop) {
+                journeyTimelineData.hasStarted = true;
+                journeyTimelineData.startScroll = scrollY;
+            }
+
+            if (journeyTimelineData.hasStarted) {
+                const progress = Math.min(1, Math.max(0, (scrollY - journeyTimelineData.startScroll) / journeyTimelineData.pageRange));
+                const rotateY = 180 - (180 * progress);
+
+                journeyTimeline.style.transform = `rotateY(${rotateY}deg)`;
+                journeyTimelineBack.style.transform = `rotateY(${rotateY}deg)`;
+
+                if (rotateY > 95) {
+                    journeyTimeline.style.zIndex = '1';
+                    journeyTimelineBack.style.zIndex = '100';
+                } else {
+                    journeyTimeline.style.zIndex = '100';
+                    journeyTimelineBack.style.zIndex = '1';
+                }
+
+                if (progress >= 1) {
+                    journeyTimeline.style.overflowY = 'auto';
+                } else {
+                    journeyTimeline.style.overflowY = 'hidden';
+                }
+            } else {
+                journeyTimeline.style.transform = 'rotateY(180deg)';
+                journeyTimelineBack.style.transform = 'rotateY(180deg)';
+                journeyTimeline.style.zIndex = '1';
+                journeyTimelineBack.style.zIndex = '100';
+                journeyTimeline.style.overflowY = 'hidden';
+            }
+        }
+
+        window.addEventListener('scroll', updateJourneyTimeline);
+        requestAnimationFrame(() => { updateJourneyTimeline(); });
+
+        // ── Map opening animation: fly-in when section enters view ──
+        let mapAnimated = false;
+        const mapContainer = document.getElementById('journey-map');
+        if (mapContainer) {
+            const mapObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !mapAnimated) {
+                        mapAnimated = true;
+                        map.invalidateSize();
+                        // Zoom out first, then fly in dramatically
+                        map.setView(initialView.center, 4, { animate: false });
+                        setTimeout(() => {
+                            map.flyTo(initialView.center, initialView.zoom, {
+                                animate: true,
+                                duration: 1.8,
+                                easeLinearity: 0.25
+                            });
+                        }, 300);
+                    }
+                });
+            }, { threshold: 0.3 });
+            mapObserver.observe(mapContainer);
+        }
+
+        // ── Tamil Nadu Leaflet Map ──
+        const initialView = { center: [11.1271, 78.6569], zoom: 6 };
+
+        const map = L.map('journey-map', {
+            center: initialView.center,
+            zoom: initialView.zoom,
+            scrollWheelZoom: false,
+            zoomControl: true
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Custom home button
+        L.Control.Home = L.Control.extend({
+            onAdd: function(map) {
+                const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-home');
+                const link = L.DomUtil.create('a', '', container);
+                link.href = '#';
+                link.title = 'Reset map view';
+                link.innerHTML = '<i class="fas fa-home"></i>';
+                L.DomEvent.on(link, 'click', function(e) {
+                    e.preventDefault();
+                    map.setView(initialView.center, initialView.zoom);
+                });
+                return container;
+            }
+        });
+        new L.Control.Home({ position: 'topright' }).addTo(map);
+
+        // Tamil Nadu project locations
+        const locations = [
+            {
+                coords: [13.0827, 80.2707],
+                city: 'Chennai',
+                projects: [
+                    { name: 'E-Commerce Product Catalog', tech: 'Node.js · Express.js · MySQL', isCurrent: true },
+                    { name: 'Event Management Platform', tech: 'Node.js · JWT · Nodemailer', isCurrent: true },
+                    { name: 'Login360 IT Solutions', tech: 'Python Django Certificate · 2025–2026', isCurrent: true }
+                ]
+            },
+            {
+                coords: [10.7905, 78.7047],
+                city: 'Trichy',
+                projects: [
+                    { name: 'M.A.M. School of Engineering', tech: 'B.E. Mechanical · CGPA 7.1', isCurrent: false },
+                    { name: 'Stock Market Backtesting System', tech: 'Django · Pandas · yFinance', isCurrent: false }
+                ]
+            },
+            {
+                coords: [9.3547, 78.8305],
+                city: 'Kadaladi',
+                projects: [
+                    { name: 'Govt. Higher Secondary School (HSC)', tech: 'Computer & Maths · 51%', isCurrent: false },
+                    { name: 'Govt. Higher Secondary School (SSLC)', tech: '10th Standard · 79%', isCurrent: false }
+                ]
+            }
+        ];
+
+        const markers = {};
+
+        locations.forEach(location => {
+            const isCurrent = location.projects.some(p => p.isCurrent);
+            const markerIcon = L.divIcon({
+                className: isCurrent ? 'neo-marker neo-marker-current' : 'neo-marker',
+                html: `
+                    <div class="neo-marker-label ${isCurrent ? 'neo-marker-label-current' : ''}">${location.city}</div>
+                    <div class="neo-marker-pin ${isCurrent ? 'neo-marker-pin-current' : ''}"></div>
+                `,
+                iconSize: isCurrent ? [35, 35] : [30, 30],
+                iconAnchor: isCurrent ? [17.5, 50] : [15, 45],
+                popupAnchor: [0, isCurrent ? -50 : -45]
+            });
+
+            let popupContent = `<div class="map-popup"><div class="map-popup-country">${location.city}</div>`;
+            location.projects.forEach((proj, index) => {
+                if (index > 0) popupContent += `<div class="map-popup-divider"></div>`;
+                popupContent += `<div class="map-popup-company"><strong>${proj.name}</strong><span>${proj.tech}</span></div>`;
+            });
+            popupContent += `</div>`;
+
+            const marker = L.marker(location.coords, { icon: markerIcon }).addTo(map);
+            marker.bindPopup(popupContent);
+            markers[location.city] = marker;
+        });
+
+        // Click timeline items to fly to map marker
+        document.querySelectorAll('.timeline-item-flat').forEach(item => {
+            item.addEventListener('click', () => {
+                const city = item.getAttribute('data-city');
+                const marker = markers[city];
+                if (marker) {
+                    map.setView(marker.getLatLng(), 9, { animate: true, duration: 1 });
+                    setTimeout(() => { marker.openPopup(); }, 500);
+                }
+            });
+        });
+
+        // ── Highlight Color Sweep Animation (scroll-triggered) ──
+        const highlights = document.querySelectorAll('.highlight');
+        const highlightData = new Map();
+
+        highlights.forEach((highlight, index) => {
+            const direction = index % 2 === 0 ? 'left' : 'right';
+            highlight.setAttribute('data-direction', direction);
+            highlightData.set(highlight, {
+                hasStarted: false,
+                startScroll: 0,
+                duration: 100,
+                direction: direction
+            });
+        });
+
+        function updateHighlights() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            highlights.forEach(highlight => {
+                const rect = highlight.getBoundingClientRect();
+                const elementTop = rect.top + scrollY;
+                const data = highlightData.get(highlight);
+
+                const triggerPoint = scrollY + windowHeight * 0.8;
+
+                if (!data.hasStarted && triggerPoint >= elementTop) {
+                    data.hasStarted = true;
+                    data.startScroll = scrollY;
+                }
+
+                if (data.hasStarted) {
+                    const progress = Math.min(1, Math.max(0, (scrollY - data.startScroll) / data.duration));
+                    highlight.style.setProperty('--highlight-progress', `${progress * 100}%`);
+                }
+
+                if (data.hasStarted && scrollY < data.startScroll - 50) {
+                    data.hasStarted = false;
+                    highlight.style.setProperty('--highlight-progress', '0%');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateHighlights);
+        requestAnimationFrame(() => { updateHighlights(); });
+
+    </script>
+</body>
+</html>
