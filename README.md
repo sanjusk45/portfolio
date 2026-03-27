@@ -15,5 +15,11 @@ Python Full Stack Developer | AI Enthusiast
 - NIFTY Backtesting Strategy
 - Full Stack App
 
+Run Locally
+# Any static server works
+npx serve .
+
+# or
+python3 -m http.server 8000
 ## 📫 Contact
 Email: sachinsanjai545@gmail.com
