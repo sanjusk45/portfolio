@@ -16,6 +16,7 @@ Python Full Stack Developer | AI Enthusiast
 - Full Stack App
 
 Run Locally
+
 npx serve .
 
 ## 📫 Contact
