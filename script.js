@@ -469,7 +469,7 @@ ${this.wrapWithColor("   • RESTful APIs documented via Swagger", "#ffffff")}
 ${this.wrapWithColor("   • Third-party integrations: logistics, analytics, email", "#ffffff")}
 ${this.wrapWithColor("   • JWT session management", "#ffffff")}
 
-${this.wrapWithColor("🔗 GitHub: ", "#ffd93d")}${this.wrapWithColor('<a href="https://github.com/SANJUIKUMAR" target="_blank" style="color:#66d9ef;text-decoration:none;">github.com/SANJUIKUMAR</a>', "#66d9ef")}`;
+${this.wrapWithColor("🔗 GitHub: ", "#ffd93d")}${this.wrapWithColor('<a href="https://github.com/sanjusk45" target="_blank" style="color:#66d9ef;text-decoration:none;">github.com/sanjusk45</a>', "#66d9ef")}`;
 
     const projectsDiv = document.createElement("div");
     projectsDiv.innerHTML = projects;
@@ -544,9 +544,9 @@ ${this.wrapWithColor("✉", "#ffd93d")}  ${this.wrapWithColor("Email:", "#ffd93d
 
 ${this.wrapWithColor("📱", "#ffd93d")}  ${this.wrapWithColor("Phone:", "#ffd93d")} ${this.wrapWithColor('+91 97919 28406', "#ffffff")}
 
-${this.wrapWithColor("⚡", "#ffd93d")}  ${this.wrapWithColor("Github:", "#ffd93d")} ${this.wrapWithColor('<a href="https://github.com/SANJUIKUMAR" target="_blank" style="color:#ffffff;text-decoration:none;">github.com/SANJUIKUMAR</a>', "#ffffff")}
+${this.wrapWithColor("⚡", "#ffd93d")}  ${this.wrapWithColor("Github:", "#ffd93d")} ${this.wrapWithColor('<a href="https://github.com/sanjusk45" target="_blank" style="color:#ffffff;text-decoration:none;">github.com/sanjusk45</a>', "#ffffff")}
 
-${this.wrapWithColor("💼", "#ffd93d")}  ${this.wrapWithColor("LinkedIn:", "#ffd93d")} ${this.wrapWithColor('<a href="https://www.linkedin.com/in/SANJUIKUMAR" target="_blank" style="color:#ffffff;text-decoration:none;">linkedin.com/in/SANJUIKUMAR</a>', "#ffffff")}
+${this.wrapWithColor("💼", "#ffd93d")}  ${this.wrapWithColor("LinkedIn:", "#ffd93d")} ${this.wrapWithColor('<a href="https://www.linkedin.com/in/sanjaikumara/" target="_blank" style="color:#ffffff;text-decoration:none;">linkedin.com/in/sanjaikumara</a>', "#ffffff")}
 
 ${this.wrapWithColor("📍", "#ffd93d")}  ${this.wrapWithColor("Location:", "#ffd93d")} ${this.wrapWithColor("Velachery, Chennai — 600042, India", "#ffffff")}
 
@@ -622,9 +622,9 @@ ${this.wrapWithColor("╰──────────────────�
 
   loadProjects() {
     this.projects = [
-      { title: "Event Management Platform", description: "Scalable event & ticket booking with JWT auth", technologies: ["Node.js", "Express.js", "MySQL", "JWT"], demo: "#", repo: "https://github.com/SANJUIKUMAR" },
-      { title: "Stock Market Backtesting", description: "Django app for stock analysis with Supertrend indicators", technologies: ["Django", "Pandas", "NumPy", "Matplotlib"], demo: "#", repo: "https://github.com/SANJUIKUMAR" },
-      { title: "E-Commerce Catalog Management", description: "Multi-role backend with Swagger-documented APIs", technologies: ["Node.js", "Express.js", "MySQL", "Swagger"], demo: "#", repo: "https://github.com/SANJUIKUMAR" },
+      { title: "Event Management Platform", description: "Scalable event & ticket booking with JWT auth", technologies: ["Node.js", "Express.js", "MySQL", "JWT"], demo: "#", repo: "https://github.com/sanjusk45" },
+      { title: "Stock Market Backtesting", description: "Django app for stock analysis with Supertrend indicators", technologies: ["Django", "Pandas", "NumPy", "Matplotlib"], demo: "#", repo: "https://github.com/sanjusk45" },
+      { title: "E-Commerce Catalog Management", description: "Multi-role backend with Swagger-documented APIs", technologies: ["Node.js", "Express.js", "MySQL", "Swagger"], demo: "#", repo: "https://github.com/sanjusk45" },
     ];
   }
 
