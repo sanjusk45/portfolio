@@ -1457,12 +1457,18 @@
 
         // Play when the section comes into view; close again once it is scrolled away
         if (journeyContainer) {
+            // Measure how much of the *screen* the section fills, not how much of the
+            // section is visible: on short screens the stacked section is taller than
+            // the viewport, so a share of the section could never be reached.
+            const steps = Array.from({ length: 21 }, (_, i) => i / 20);
             new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.intersectionRatio >= 0.25) playJourney();
-                    else if (entry.intersectionRatio < 0.12) closeBook();
+                    const viewH = entry.rootBounds ? entry.rootBounds.height : window.innerHeight;
+                    const fill = entry.intersectionRect.height / Math.min(entry.boundingClientRect.height, viewH);
+                    if (fill >= 0.5) playJourney();
+                    else if (fill < 0.15) closeBook();
                 });
-            }, { threshold: [0, 0.12, 0.25] }).observe(journeyContainer);
+            }, { threshold: steps }).observe(journeyContainer);
         }
 
         // ── Tamil Nadu Leaflet Map ──
